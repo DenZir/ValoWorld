@@ -1,11 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lexend+Tera&family=Metal+Mania&family=Oswald:wght@200&family=Staatliches&display=swap');
+.a {
+font-family: 'Anton', sans-serif;
+}
+.lt {
+font-family: 'Lexend Tera', sans-serif;
+}
+.s {
+font-family: 'Staatliches', sans-serif;
+}
 header , footer{
   background-color: #9370DB;
 }
 body {
-  background-image: url('../img/bg.jpg');
+  background-image: url('../img/bg.png');
   background-size: cover;
   background-attachment: fixed;
   background-position: 200px 50px;
+}
+.p{
+  padding: 0 10px
 }
 .navbar-brand {
  font-size: 18px;
