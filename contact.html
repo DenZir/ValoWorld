@@ -11,15 +11,12 @@
 </head>
 <body>
  <header>
-   <div class="shadow-sm rounded">
-         <img class="d-block mx-auto" src="img/logo.png" width="200" draggable="false" alt="Logo">
-       </div>
        <!-- Navbar -->
           <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
               <a class="navbar-brand mr-5" href="#">
                 <i class="fas fa-gamepad"></i>
-                VALOWORLD
+                <img src="img/vl.png" class="img-fluid rounded-circle" width="50" alt="Rob Smith">ALOWORLD
               <i class="fas fa-gamepad"></i></a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" ariaexpanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -33,6 +30,11 @@
              <a class="nav-link" href="index.html">
                <i class="fab fa-steam"></i>
                Home</a>
+           </li>
+           <li class="nav-item v">
+             <a class="nav-link v" href="tr.html">
+               <i class="fas fa-trophy"></i>
+               Tournaments</a>
            </li>
            <li class="nav-item">
              <a class="nav-link" href="me.html">
@@ -51,11 +53,13 @@
              </a>
              <div class="dropdown-menu" id="custom-dropdown-menu">
                <a class="dropdown-item" href="val.html">
-                 Valorant's release
-                 <span class="badge badge-secondary badge-info ml-2">
-                   New
-                 </span>
-               </a>
+                 <a class="dropdown-item bg" href="vn.html">
+                   Rating in Valorant
+                   <span class="badge badge-secondary badge-info ml-2">
+                     New
+                   </span>
+                   </a>
+                  <a class="dropdown-item" href="val2.html">Valorant's release</a>
                <a class="dropdown-item" href="val2.html">New Agent Reyna</a>
              </div>
            </li>
@@ -84,24 +88,28 @@
           <li>
             +380956756492
           </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCg8lLjbYuhO8RYZhpXrEsuw?view_as=subscriber">DenZir on YouTube</a>
+          </li>
         </ul>
         </div>
         <form>
+            <p class="a text-center">Or send message from here</p>
             <div class="row">
               <!-- Name -->
-              <div class="col-md-6 pb-3 p">
-                <input type="text" class="form-control input" name="name" data-form-field="Name" placeholder="Your Name" required="">
+              <div class="col-md-6 pb-3 p lt">
+                <input type="text lt" class="form-control input" name="name" data-form-field="Name" placeholder="Your Name" required="">
               </div>
               <!-- Phone -->
-              <div class="col-md-6 pb-3 p">
+              <div class="col-md-6 pb-3 p lt">
                 <input type="text" class="form-control input" name="phone" data-form-field="Phone" placeholder="Phone" required="">
               </div>
               <!-- Email -->
-              <div class="col-md-12 pb-3 p">
+              <div class="col-md-12 pb-3 p lt">
                 <input type="email" class="form-control input" name="email" data-form-field="Email" placeholder="Email" required="">
               </div>
               <!-- Message -->
-              <div class="col-md-12 pb-3 p">
+              <div class="col-md-12 pb-3 p lt">
                 <textarea class="form-control input" name="message" rows="3" maxlength="6000" data-form-field="Message" placeholder="Message" style="resize:none"></textarea>
               </div>
               <div class="input-group-btn col-md-12 p lt">
@@ -111,6 +119,13 @@
           </form>
 
    </div>
+   <p class="lead card a r text-center">Also read these</p>
+   <img src="img/re.jpg" width="300px" alt="rating in valorant">
+   <p><a href="val.html" class="lt">Rating in Valorant</a></p>
+   <img src="img/r.png" width="300px" alt="new agent reyna">
+   <p><a href="val2.html" class="lt">New Agent Reyna</a></p>
+   <img src="img/val.jpg" width="300px" alt="valorant release">
+   <p><a href="val.html" class="lt">Valorant's release</a></p>
 
 
  </main>

@@ -9,7 +9,10 @@ font-family: 'Lexend Tera', sans-serif;
 font-family: 'Staatliches', sans-serif;
 }
 header , footer{
-  background-color: #9370DB;
+  background-color: #8B0000;
+}
+.bg{
+  background-color: #8B0000
 }
 body {
   background-image: url('../img/bg.png');
@@ -41,4 +44,27 @@ nav li.active, nav li.active:before {
 }
 .kl{
   position: relative;
+}
+.navbar-collapse{
+  width: 800px;
+  display: flex;
+  justify-content: flex-end;
+}
+/* .nav-link{
+  width: auto;
+} */
+.nav-link{
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.v{
+  width: 148px;
+}
+.q{
+  display: flex;
+  justify-content: flex-end;
+}
+.r{
+  background-color: #FF4654;
 }
