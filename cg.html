@@ -14,9 +14,9 @@
        <!-- Navbar -->
           <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
-              <a class="navbar-brand mr-5" href="#">
+              <a class="navbar-brand mr-5 mx-auto" href="#">
                 <i class="fas fa-gamepad"></i>
-                <img src="img/vl.png" class="img-fluid rounded-circle" width="50" alt="Rob Smith">ALOWORLD
+                <img src="img/vl.png" class="img-fluid rounded-circle" width="50" alt="logo">ALOWORLD
               <i class="fas fa-gamepad"></i></a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" ariaexpanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -30,11 +30,6 @@
              <a class="nav-link" href="index.html">
                <i class="fab fa-steam"></i>
                Home</a>
-           </li>
-           <li class="nav-item v">
-             <a class="nav-link v" href="tr.html">
-               <i class="fas fa-trophy"></i>
-               Tournaments</a>
            </li>
            <li class="nav-item">
              <a class="nav-link" href="me.html">
@@ -60,10 +55,13 @@
                <a class="dropdown-item" href="val.html">
                  Valorant's release
                </a>
+               <a class="dropdown-item bg" href="tr.html">
+                 Tournaments
+               </a>
                <a class="dropdown-item" href="val2.html">New Agent Reyna</a>
              </div>
            </li>
-           <li class="nav-item active">
+           <li class="nav-item">
              <a class="nav-link" href="contact.html">
                <i class="fas fa-phone"></i>
                Contact</a>
@@ -75,19 +73,23 @@
  </header>
 
  <main class="pt-10">
-      <div class=" card container">
-
-          <img class="d-block mx-auto flex-center kl" src="img/c.png" width="1100" alt="">
+      <div class="row">
+        <div class="container card">
+          <img class="d-block mx-auto flex-center kl" src="img/c.png" width="1100" alt="cypher">
           <p class="lead card mx-auto lt">
             <b>TIPS FOR CYPHER</b>
           </p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3472831.5279919934!2d-9.39405771461776!3d31.785837075684363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b88619651c58d%3A0xd9d39381c42cffc3!2z0JzQsNGA0L7QutC60L4!5e0!3m2!1sru!2sua!4v1592912023152!5m2!1sru!2sua" class="mx-auto d-block rounded-circle" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         <p class="mx-auto lead lt">Abilities</p>
-          <ol>
-          <li class="mx-auto text a">
-            <button type="button" class="" data-toggle="tooltip" data-trigger="focus" title="Equip a spycam. Fire to place the spycam at the targeted location. REUSE this ability to take control of the camera's view. While in control of the camera. Fire to shoot a marking dart. This dart will reveal the location of any player struck by the dart." data-content="Equip a gas emitter launcher. Fire to deploy a long line of gas emitters. Re-use the ability to create a tall wall of toxic gas at the cost of fuel. This ability can be re-used more than once.">
-          Spycam
-        </button>
-        </li>
+
+          <li class="mx-auto a">
+            <button type="button" class="text-center" data-toggle="tooltip" data-trigger="focus" title="Equip a spycam.
+            Fire to place the spycam at the targeted location. REUSE this ability to take control of the camera's view.
+             While in control of the camera. Fire to shoot a marking dart.
+             This dart will reveal the location of any player struck by the dart." data-content="">
+            Spycam
+            </button>
+            </li>
 
         <li class="mx-auto a">
           <button type="button" class="" data-toggle="tooltip" data-trigger="focus" title="Equip a trapwire. Fire to place a destructible and covert tripware at the targeted location, creating a line that spans between the placed location and the wall opposite. Enemy players who cross a tripwire will be tethered, revealed, and dazed after a short period if they do not destroy the device in time. This ability can be picked up to be redeployed." data-content="Tooltip on top">
@@ -104,10 +106,11 @@
             Neural Theft
           </button>
         </li>
+        <iframe width="1050" height="600" class="mx-auto d-block" src="https://www.youtube.com/embed/vzajN2Riu4g" frameborder="100px" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
         </p>
-          <ol>
+
         <!-- <p>
           <b>ABILITY: POISON CLOUD</b>
         </p>
@@ -134,8 +137,8 @@
 
 
 </main>
-<div class=" border-light shadow-sm p-2">
-  <footer class="border-top">
+<footer class="border-top">
+  <div class="container">
     <!-- Logo - About - Contact -->
     <div class="row py-3 text-light">
 
@@ -146,8 +149,8 @@
 
       <!-- About -->
       <div class="col-md-4">
-        <h3 class="lt">About</h3>
-        <p class="lt">
+        <h3>About</h3>
+        <p>
           Terms of Use @ Privacy @ Notice @ Cookie @ Policy @ Do not sell my info @ Communications @ Preferences @ Licensing @ FAQ @ Accessibility @ Platform @ Status @
           @ Contact @ Send Us a Tip @ Community @ Guidelines @ Masthead @ Editorial Ethics and Guidelines @
         </p>
@@ -155,26 +158,32 @@
 
         <!-- Contact me -->
         <div class="col-md-4">
-          <h3 class="p lt">Contact me</h3>
-          <p class="p lt">
+          <h3>Contact me</h3>
+          <p>
             If you are interested in working with
             me or just want to say hello simply
             write on email.
             <br>
-            <strong class="p lt">Email: <a href="#" class="text-white">dan.super.mine@gmail.com</a></strong>
+            <strong>Email: <a href="#" class="text-white">dan.super.mine@gmail.com</a></strong>
           </p>
         </div>
 
+
+
     </div>
 
     <!-- Copyright -->
     <!-- Copyright -->
-    <div class="row py-3 d-flex justify-content-center border-top">
-      <small class="d-block text-light lt">
-        Copyright &copy; 2020-2021 by DenZir
-      </small>
-    </div>
+   <div class="row py-3 d-flex justify-content-center border-top">
+     <small class="d-block text-light">
+       Copyright &copy; 2020-2021 DenZir
+     </small>
+   </div>
+
  </div>
+
+
+</footer>
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>

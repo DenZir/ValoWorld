@@ -9,15 +9,75 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
   <title>VALOWORLD</title>
+  <style>
+  .lake {
+  text-align: center;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  }
+  .lake:before {
+  display: block;
+  background-color: rgb(0, 0, 0);
+  content: "";
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  }
+
+  .lake:after {
+  font-family: 'Lucida Console';
+  color: white;
+  content: attr(alt);
+  display: block;
+  font-size: 16px;
+  opacity: 0;
+  padding: 0 3%;
+  position: absolute;
+  text-transform: none;
+  top: 50%;
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-transform: scale(0) translateY(-50%);
+  transform: scale(0) translateY(-50%);
+  width: 94%;
+  z-index: 3;
+  }
+
+  .lake img {
+  border: none;
+  display: block;
+  z-index: 1;
+  }
+
+  .lake:after {
+  -webkit-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+  }
+
+  .lake:hover:before {
+  opacity: 0.6;
+  }
+
+  .lake:hover:after {
+  opacity: 1;
+  -webkit-transform: scale(1) translateY(-50%);
+  transform: scale(1) translateY(-50%);
+  }
+
+  </style>
 </head>
 <body>
- <header>
+ <header class="text-center">
        <!-- Navbar -->
           <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
-              <a class="navbar-brand mr-5" href="#">
+              <a class="navbar-brand mr-5 mx-auto" href="#">
                 <i class="fas fa-gamepad"></i>
-                <img src="img/vl.png" class="img-fluid rounded-circle" width="50" alt="Rob Smith">ALOWORLD
+                <img src="img/vl.png" class="img-fluid rounded-circle" width="50" alt="logo">ALOWORLD
               <i class="fas fa-gamepad"></i></a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" ariaexpanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,17 +86,13 @@
             </div>
             <!-- menu -->
        <div class="collapse navbar-collapse"  id="navbarSupportedContent">
-         <ul class="navbar-nav mr-auto">
-           <li class="nav-item active">
-             <a class="nav-link" href="index.html">
+         <ul class="navbar-nav mx-auto mr-auto float-left">
+           <li class="nav-item active mx-auto">
+             <a class="nav-link " href="index.html">
                <i class="fab fa-steam"></i>
                Home</a>
            </li>
-           <li class="nav-item v">
-             <a class="nav-link v" href="tr.html">
-               <i class="fas fa-trophy"></i>
-               Tournaments</a>
-           </li>
+
            <li class="nav-item">
              <a class="nav-link" href="me.html">
                <i class="far fa-address-card"></i>
@@ -50,7 +106,7 @@
            <!-- dropdown menu -->
            <li class="nav-item dropdown">
              <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               Blog<span class="badge badge-danger ml-2">2</span>
+               <i class="fas fa-blog"></i>Blog<span class="badge badge-danger ml-2">2</span>
              </a>
              <div class="dropdown-menu bg" id="custom-dropdown-menu">
                <a class="dropdown-item bg" href="vn.html">
@@ -60,6 +116,9 @@
                  </span>
                <a class="dropdown-item bg" href="val.html">
                  Valorant's release
+               </a>
+               <a class="dropdown-item bg" href="tr.html">
+                 Tournaments
                </a>
                <a class="dropdown-item bg" href="val2.html">New Agent Reyna</a>
              </div>
@@ -75,15 +134,16 @@
           </nav>
  </header>
 
- <main class="pt-3">
+ <main class="pt-3 mx-auto d-block text-center">
 
-   <div class="container">
+   <div class="container mx-auto d-block">
          <div class="row">
 
               <div class="col-md-9">
                   <!-- Spider-Man -->
                   <div class="card flex-md-row mb-4 border-light shadow-sm h-md-250 flex-right">
-                    <img class="card-img-left flex-auto d-none d-md-block" height="250" src="img/val.jpg" alt="Card imagecap">
+                    <a class="lake" href="val.html" title="" alt="Valorant's release">
+                    <img class="card-img-left flex-auto d-none d-md-block" height="250" src="img/val.jpg" alt="Card imagecap"></a>
                     <div class="card-body d-flex flex-column align-items-start">
                       <h3 class="card-title mb-0 lt">
                       Valorant's release
@@ -92,26 +152,43 @@
                         Today finally happened what many Gamers were waiting for.
                         Today, a new shooter from Riot Games has become publicly available....
                       </p>
-                      <a href="val.html" class="btn btn-warning">Read more</a>
+                      <a href="val.html" class="btn btn-warning mx-auto d-block">Read more</a>
                     </div>
                   </div>
-                <div class="col-md-9">
+                <div class="col-md-10">
                     <!-- Spider-Man -->
                     <div class="card flex-md-row mb-4 border-light shadow-sm h-md-250">
-                      <img class="card-img-left flex-auto d-none d-md-block" height="250" src="img/r.jpg" alt="reyna">
+                      <a class="lake" href="val2.html" title="" alt="New Agent Reyna">
+                        <img class="card-img-left flex-auto d-none d-md-block" height="250" src="img/r.jpg" alt="reyna"></a>
                       <div class="card-body d-flex flex-column align-items-start">
                         <h3 class="card-title mb-0 lt">
                         New Agent ~  Reyna
                         </h3>
                         <p class="card-text mb-auto a">
                         In Scott’s description, Reyna has two abilities that share a resource called Soul Orbs.
-                        One these abilities is a heal that can return Reyna to full health and even over-heal herself, restoring her armor up to the 50 armor maximum.
-                        The other ability allows her to turn invulnerable for a few seconds, but she can’t shoot during this time.
-                        Both of these abilities require Soul Orbs, which Reyna can only earn by getting kills.
                         </p>
-                        <a href="val2.html" class="btn btn-warning">Read more</a>
+                        <a href="val2.html" class="btn btn-warning mx-auto d-block">Read more</a>
                       </div>
                     </div>
+                </div>
+                <div class="card flex-md-row mb-4 border-light shadow-sm h-md-150 flex-right">
+                    <a class="lake" href="tr.html" title="" alt="Tournaments">
+                      <img class="card-img-left flex-auto d-none d-md-block" height="250" src="img/t.jpg" alt="Card imagecap"></a>
+                  <div class="card-body d-flex flex-column align-items-start">
+                    <h3 class="card-title mb-0 lt">
+                    Tournaments
+                    </h3>
+                    <p class="card-text mb-auto cl a">
+                      Check all new Tournaments in cybersport
+                    </p>
+                    <p class="card-text mb-auto cl a">
+                      BLAST Premier Spring Series 2020 Americas Finals
+                    </p>
+                    <p class="card-text mb-auto cl a">
+                      BLAST Premier Spring 2020 Europe Finals
+                    </p>
+                    <a href="tr.html" class="btn btn-warning mx-auto d-block">Read more</a>
+                  </div>
                 </div>
 
 
@@ -119,12 +196,12 @@
 
                 </div>
                 <!-- ASIDE -->
-                  <div class="col-md-3 mx-auto mb-3 text-center card flex-md-row mb-4 border-light shadow-sm h-md-250">
+                  <div class="col-md-3 mx-auto mb-3 text-center flex-md-row mb-4 border-light shadow-sm h-md-250">
                     <div class="blog-sidebar p-2 shadow-sm rounded border-light shadow-sm ">
-                      <h2 class="lt">About blogger</h2>
+                      <h2 class="lt text-white">About blogger</h2>
                       <img src="img/a.png" class="img-fluid rounded-circle" width="150" alt="Rob Smith">
-                      <h4 class="lt">Den Zir</h4>
-                      <p class="a">
+                      <h4 class="lt text-white">Den Zir</h4>
+                      <p class="a text-white">
                         I am Danil. And I manage this blog. I also have YouTube channel.
                       </p>
 
@@ -134,47 +211,55 @@
 
 
  </main>
- <div class=" border-light shadow-sm p-2">
-   <footer class="border-top">
-     <!-- Logo - About - Contact -->
-     <div class="row py-3 text-light">
+ <div class=" border-light d-block mx-auto shadow-sm p-2">
+   <!-- FOOTER -->
+  <footer class="border-top">
+    <div class="container">
+      <!-- Logo - About - Contact -->
+      <div class="row py-3 text-light">
 
-       <!-- Logo -->
-       <div class="col-md-4">
-         <img src="img/logo.png" alt="Logo" width="250" class="img-fluid">
-       </div>
+        <!-- Logo -->
+        <div class="col-md-4">
+          <img src="img/logo.png" alt="Logo" width="250" class="img-fluid">
+        </div>
 
-       <!-- About -->
-       <div class="col-md-4">
-         <h3 class="lt">About</h3>
-         <p class="lt">
-           Terms of Use @ Privacy @ Notice @ Cookie @ Policy @ Do not sell my info @ Communications @ Preferences @ Licensing @ FAQ @ Accessibility @ Platform @ Status @
-           @ Contact @ Send Us a Tip @ Community @ Guidelines @ Masthead @ Editorial Ethics and Guidelines @
-         </p>
-       </div>
+        <!-- About -->
+        <div class="col-md-4">
+          <h3>About</h3>
+          <p>
+            Terms of Use @ Privacy @ Notice @ Cookie @ Policy @ Do not sell my info @ Communications @ Preferences @ Licensing @ FAQ @ Accessibility @ Platform @ Status @
+            @ Contact @ Send Us a Tip @ Community @ Guidelines @ Masthead @ Editorial Ethics and Guidelines @
+          </p>
+        </div>
 
-         <!-- Contact me -->
-         <div class="col-md-4">
-           <h3 class="p lt">Contact me</h3>
-           <p class="p lt">
-             If you are interested in working with
-             me or just want to say hello simply
-             write on email.
-             <br>
-             <strong class="p lt">Email: <a href="#" class="text-white">dan.super.mine@gmail.com</a></strong>
-           </p>
-         </div>
+          <!-- Contact me -->
+          <div class="col-md-4">
+            <h3>Contact me</h3>
+            <p>
+              If you are interested in working with
+              me or just want to say hello simply
+              write on email.
+              <br>
+              <strong>Email: <a href="#" class="text-white">dan.super.mine@gmail.com</a></strong>
+            </p>
+          </div>
 
-     </div>
 
-     <!-- Copyright -->
-     <!-- Copyright -->
+
+      </div>
+
+      <!-- Copyright -->
+      <!-- Copyright -->
      <div class="row py-3 d-flex justify-content-center border-top">
-       <small class="d-block text-light lt">
-         Copyright &copy; 2020-2021 by DenZir
+       <small class="d-block text-light">
+         Copyright &copy; 2020-2021 DenZir
        </small>
      </div>
-  </div>
+
+   </div>
+
+
+ </footer>
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
